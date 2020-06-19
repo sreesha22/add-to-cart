@@ -1,0 +1,14 @@
+<h2>Products</h2>
+
+<div class="shipping-item" *ngFor="let product of products | async">
+    <ul class="price">
+        <li class="grey"><img  style="width:70%;height:auto"[src]="product.img_url"></li>
+        <li class="header">Product Name:  {{product.name}}</li>
+        <span>
+        <li class="grey">Price:{{product.price | currency}}</li>
+        <li class="grey">Discount:{{product.discount}}</li>
+    </span>
+    <button (click)="addToCart(product)" style="background-color:yellow; color:black">AddToCart</button>
+      </ul>
+     
+</div>

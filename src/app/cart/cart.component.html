@@ -1,0 +1,16 @@
+<h3>Cart</h3>
+
+
+
+<div class="cart-item" *ngFor="let item of items">
+    <ul class="price">
+        <li class="grey"><img style="width:70%;height:auto"[src]="item.img_url"></li>
+        <li class="header">Product Name:{{item.name}}</li>
+        <span>
+        <li class="grey">Price:  {{item.price | currency}}</li>
+        <li class="grey">Discount:  {{item.discount}}</li>
+    </span>
+   
+      </ul>
+     
+</div>

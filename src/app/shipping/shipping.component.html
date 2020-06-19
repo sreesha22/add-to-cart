@@ -1,0 +1,14 @@
+<h3>Products Added To Cart</h3>
+
+<div class="shipping-item" *ngFor="let shipping of shippingCosts | async">
+    <ul class="price">
+        <li class="grey"><img [src]="shipping.img_url"></li>
+        <li class="header">{{shipping.name}}</li>
+        <span>
+        <li class="grey">{{shipping.price}}</li>
+        <li class="grey">{{shipping.discount}}</li>
+    </span>
+  
+      </ul>
+     
+</div>
